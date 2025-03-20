@@ -66,6 +66,11 @@ body{
 .btn:hover{
     background: linear-gradient(125deg, rgb(205, 6, 6), rgb(64, 36, 36));
 }
+
+.calculator{
+    display:flex;
+    justify-content: center;
+}
 .main-space{
     display: flex;
     flex-direction: row;
@@ -76,5 +81,7 @@ body{
     border-radius: 30px;
     padding-top: 20px;
     padding-bottom: 30px;
+    width: 100%;
+    max-width: 500px;
 }
 
