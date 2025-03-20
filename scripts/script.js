@@ -1,0 +1,1 @@
+let oneBtn = document.getElementById("one")
