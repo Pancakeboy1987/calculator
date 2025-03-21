@@ -113,14 +113,17 @@ body{
     display: flex;
     align-items: center;
     background: rgb(227, 219, 219);
-    color: black;
-    padding-top: 50px;
-    padding-left: 130px;
-    padding-right: 130px;
+    color: rgb(65, 49, 49);
+    padding-top: 10px;
+    padding-left: 125px;
+    padding-right: 125px;
     border: solid black 2px;
     border-radius: 25px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 900;
     text-shadow: rgb(223, 150, 150) 2px 2px;
 
+}
+.display-window p{
+    color: rgb(49, 46, 46);
 }

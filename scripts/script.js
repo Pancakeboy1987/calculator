@@ -14,3 +14,8 @@ let mulBtn = document.getElementById("mul")
 let divBtn = document.getElementById("divide")
 let scbBtn = document.getElementById("scn")
 let equalBtn = document.getElementById("equal")
+
+let displayText=document.getElementById("display-text")
+
+
+
