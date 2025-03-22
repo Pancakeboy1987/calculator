@@ -32,8 +32,11 @@ function del(){
     displayText.innerHTML=''
 }
 
-function to_plus(x,y){
+async function to_plus(x,y){
     x = displayText.innerHTML;
-    displayText = '';;
+    displayText.innerHTML = '';
+}
 
+function solution(num){
+    num +=
 }
