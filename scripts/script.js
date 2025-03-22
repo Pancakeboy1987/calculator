@@ -66,22 +66,24 @@ function to_div(){
 
 function solution(){
     const sndNumber = parseInt(displayText.innerHTML);
-    let answ
     switch (operation){
         case "+":
-            answ= fstNumber+sndNumber;
-            displayText.innerHTML = answ;
+            let answ1=fstNumber+sndNumber;
+            displayText.innerHTML = answ1;
+            break;
         case "-":
-            asnw = fstNumber-sndNumber;
-            displayText.innerHTML = answ;
-
+            let answ2 = (fstNumber-sndNumber);
+            displayText.innerHTML = answ2;
+            break;
         case "*":
-            asnw = fstNumber*sndNumber;
-            displayText.innerHTML = answ;
+            let answ3 = fstNumber*sndNumber;
+            displayText.innerHTML = answ3;
+            break;
+        case "/":
+            let answ4 = fstNumber/sndNumber;
+            displayText.innerHTML = answ4
         default:
             return;
         
-
-
     }
 }
