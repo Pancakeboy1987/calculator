@@ -114,14 +114,16 @@ body{
     align-items: center;
     background: rgb(227, 219, 219);
     color: rgb(65, 49, 49);
-    padding-top: 10px;
     padding-left: 125px;
     padding-right: 125px;
+    min-width: 375px;
+    max-width: 390px;
     border: solid black 2px;
     border-radius: 25px;
     font-size: 30px;
     font-weight: 900;
     text-shadow: rgb(223, 150, 150) 2px 2px;
+
 
 }
 .display-window p{

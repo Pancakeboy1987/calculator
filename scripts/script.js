@@ -18,4 +18,22 @@ let equalBtn = document.getElementById("equal")
 let displayText=document.getElementById("display-text")
 
 
+function render(n){
+    displayText.innerHTML+= n;
+}
 
+//через onclick передается параметр сюда
+function number(x){
+    n = x;
+    render(n)
+}
+
+function del(){
+    displayText.innerHTML=''
+}
+
+function to_plus(x,y){
+    x = displayText.innerHTML;
+    displayText = '';;
+
+}
