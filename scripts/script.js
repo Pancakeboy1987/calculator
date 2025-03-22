@@ -20,7 +20,7 @@ let displayText=document.getElementById("display-text")
 
 ///переменные
 let operation = ""
-let answ = 0
+
 let fstNumber
 
 function render(n){
@@ -38,27 +38,46 @@ function del(){
     displayText.innerHTML=''
 }
 
- function to_plus(){
+function to_plus(){
     fstNumber = parseInt(displayText.innerHTML);
     displayText.innerHTML = ''
-    operation = "+";
+    operation = "+"
 }
+
+function to_minus(){
+    fstNumber = parseInt(displayText.innerHTML);
+    displayText.innerHTML = ''
+    operation = "-";
+}
+
+function to_mul(){
+    fstNumber = parseInt(displayText.innerHTML);
+    displayText.innerHTML = ''
+    operation = "*";
+}
+
+function to_div(){
+    fstNumber = parseInt(displayText.innerHTML);
+    displayText.innerHTML = ''
+    operation = "/";
+}
+
+
 
 function solution(){
     const sndNumber = parseInt(displayText.innerHTML);
+    let answ
     switch (operation){
         case "+":
             answ= fstNumber+sndNumber;
             displayText.innerHTML = answ;
-            break
         case "-":
             asnw = fstNumber-sndNumber;
             displayText.innerHTML = answ;
-            break
+
         case "*":
             asnw = fstNumber*sndNumber;
             displayText.innerHTML = answ;
-            break
         default:
             return;
         
