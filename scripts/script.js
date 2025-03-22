@@ -38,5 +38,5 @@ async function to_plus(x,y){
 }
 
 function solution(num){
-    num +=
+    
 }
