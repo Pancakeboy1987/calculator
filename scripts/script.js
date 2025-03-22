@@ -1,3 +1,4 @@
+///кнопки
 let oneBtn = document.getElementById("one")
 let twoBtn = document.getElementById("two")
 let threeBtn = document.getElementById("three")
@@ -17,6 +18,10 @@ let equalBtn = document.getElementById("equal")
 
 let displayText=document.getElementById("display-text")
 
+///переменные
+let operation = ""
+let answ = 0
+let fstNumber
 
 function render(n){
     displayText.innerHTML+= n;
@@ -28,15 +33,36 @@ function number(x){
     render(n)
 }
 
+//функция удаления
 function del(){
     displayText.innerHTML=''
 }
 
-async function to_plus(x,y){
-    x = displayText.innerHTML;
-    displayText.innerHTML = '';
+ function to_plus(){
+    fstNumber = parseInt(displayText.innerHTML);
+    displayText.innerHTML = ''
+    operation = "+";
 }
 
-function solution(num){
-    
+function solution(){
+    const sndNumber = parseInt(displayText.innerHTML);
+    switch (operation){
+        case "+":
+            answ= fstNumber+sndNumber;
+            displayText.innerHTML = answ;
+            break
+        case "-":
+            asnw = fstNumber-sndNumber;
+            displayText.innerHTML = answ;
+            break
+        case "*":
+            asnw = fstNumber*sndNumber;
+            displayText.innerHTML = answ;
+            break
+        default:
+            return;
+        
+
+
+    }
 }
