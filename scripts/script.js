@@ -84,3 +84,40 @@ function solution() {
       return;
   }
 }
+
+
+///данная функция бесполезна в данной версии калькулятора
+function scb(){
+  const sndNumber = parseInt(displayText.innerHTML);
+  switch (operation) {
+    case "+":
+      let scb_answ1 = fstNumber + sndNumber;
+      displayText.innerHTML = scb_answ1;
+      break;
+    case "-":
+      let scb_answ2 = fstNumber - sndNumber;
+      displayText.innerHTML = `(${scb_answ2})`;
+      break;
+    case "*":
+      let scb_answ3 = fstNumber * sndNumber;
+      displayText.innerHTML = scb_answ3;
+      break;
+    case "/":
+      let scb_answ4 = fstNumber / sndNumber;
+      displayText.innerHTML = scb_answ4;
+    default:
+      return;
+  }
+}
+///
+
+function pms(){
+  if (displayText.innerHTML ==''){
+    alert("Сперва введите число");
+  }else{
+    numberToChange = parseInt(displayText.innerHTML);
+    numberToChange*=-1;
+    displayText.innerHTML = numberToChange
+  }
+
+}
